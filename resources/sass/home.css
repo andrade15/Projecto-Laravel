@@ -49,11 +49,12 @@ ul li.active a{
 .main{
 	max-width: 1300px;
 	margin:auto;
+	
 }
 
 .title{
 	position:absolute;
-	top:50%;
+	top:65%;
 	left:50%;
 	transform: translate(-50%, 50%);
 }
@@ -64,7 +65,7 @@ ul li.active a{
 
 .button{
 	position:absolute;
-	top:72%;
+	top:92%;
 	left:50%;
 	transform: translate(-50%, 50%);
 }
