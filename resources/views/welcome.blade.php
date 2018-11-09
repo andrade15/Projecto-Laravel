@@ -1,98 +1,77 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frota de Camioes</title>
+<link rel="stylesheet" href="../sass/home.css">
+</head>
+<style>
+.footer {
+   left: 0;
+   bottom: 0;
+   height:45px;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+<body>
+<?php
+// Echo session variables that were set on previous page
+echo "Favorite color is " . $_SESSION["user"] . ".<br>";
+?>
+<header>
+      <div class="main">
+	  <br>
+	       <ul>
+		        <li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Viagens</a></li>
+				<li><a href="#">Solicitações</a></li>
+				<li><a href="#">Sobre nós</a></li>
+				<li><a href="#">Contacto</a></li>
+		   </ul>
+		   <div class="logo">
+	                    <a class="btn">S.G.F.C</a>
+	       </div>
+	  
+	  </div>
+	  <div class="title">
+	  <h1> FROTA DE CAMIOES</h1>
+	  </div>
+	  
+	  <div class="button">
+	  <a href="#" class="btn">CRIE UMA VIAGEM</a>
+	<!--
+ <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a> -->
+	  </div>
 
-        <title>Laravel</title>
+</header>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+<br>
+<h1 style="text-align:center; font-size:200%;">Informação Geral</h1>
+ 
+				<p style="text-align:center; font-size:120%; font-family:courier;"><strong>INDIVIDUALIDADE:</strong> Consideramos cada colaborador como unico, reconhecendo as diferênças
+				de valores individuais e culturais.</p>
+				<p style="text-align:center;  font-size:120%; font-family:courier;"><strong>SOCIEDADE:</strong> Promoção de uma política de interação com a sociedade no sentido de
+				desenvolvimento sustentado.</p>
+				<p style="text-align:center;  font-size:120%; font-family:courier;"><strong>SEGURANÇA E SAÚDE NO TRABALHO:</strong> Optimizamos as condições de trabalho para
+				se reflectir num melhor desempenho dos trabalhadores e, consequentemente, numa
+				maior produtividade melhor qualidade e redução dos custos directos e indirectos.</p>
+				<p style="text-align:center;  font-size:120%; font-family:courier;"><strong>DESENVOLVIMENTO PROFISSIONAL:</strong> Criamos um ambiente que permite as pessoas
+				desenvolverem as suas capacidades, a sua criatividade e sua motivação.</p>
+			 
 
-            .full-height {
-                height: 100vh;
-            }
+<br>
+<br>
+<br>
+<br>
+<br>
+fgthoigfcxd<br>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+<div class="footer">
+  <p>FROTA Ltd</p>
+</div>
+<div>
+</body>
 </html>
