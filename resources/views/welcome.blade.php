@@ -16,10 +16,6 @@
 }
 </style>
 <body>
-<?php
-// Echo session variables that were set on previous page
-echo "Favorite color is " . $_SESSION["user"] . ".<br>";
-?>
 <header>
       <div class="main">
 	  <br>
@@ -40,7 +36,7 @@ echo "Favorite color is " . $_SESSION["user"] . ".<br>";
 	  </div>
 	  
 	  <div class="button">
-	  <a href="#" class="btn">CRIE UMA VIAGEM</a>
+	  <a href="nova_viagem.blade.php" class="btn">CRIE UMA VIAGEM</a>
 	<!--
  <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a> -->
 	  </div>

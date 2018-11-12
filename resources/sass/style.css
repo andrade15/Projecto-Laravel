@@ -67,3 +67,50 @@ font-weight: bold;
 	background-color:#fff;
 	color:black;
 }
+ul{
+     float:right;
+     list-style-type:none;
+	 margin-top:25px;
+	 position:fixed;
+	 left:55%;
+	 top:2px;
+}
+
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding:5px 20px;
+    border: 1px solid transparent;	
+	transition: 0.8s ease;
+	border-radius:10px;
+}
+ul li a:hover{
+	background-color: #fff;
+	color:#000;
+}
+ul li.active a{
+	background-color: #fff;
+	color:#000;
+}
+
+.logo img{
+	position:absolute;
+	margin-top:500px;
+	left:2%;
+	
+}
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color:#fff;
+	text-decoration:none;
+	transition: 0.8s ease;
+	border-radius:10px;
+}
+.btn:hover{
+	background-color: #fff;
+	color:#000;
+}

@@ -17,6 +17,7 @@
 </style>
 </head>
 <body>
+
 <?php
 $hostname="localhost";
 $username="root";
@@ -58,12 +59,9 @@ $result = mysqli_query($connect, $query);
 	
 	mysqli_free_result($result);
 
-echo "Acesso Negado";
 mysqli_close($connect);
 
 ?>
-
-<br><button id="botao" onclick="location.href='login.html'">Login</button>
 </body>
 
 </html>

@@ -9,10 +9,10 @@
 var wrap = $("#imagem");
 
 wrap.on("scroll", function(e) {
-  if (this.scrollTop > 27) {
-    wrap.addClass("fix-search");
+  if (this.scrollTop > 147) {
+    wrap.addClass("fix-header");
   } else {
-    wrap.removeClass("fix-search");
+    wrap.removeClass("fix-header");
   }
 })
 
@@ -30,8 +30,9 @@ wrap.on("scroll", function(e) {
    text-align: center;
 }
 </style>
-<body>
-<header id="imagem">
+<body id="corpo">
+<header id="imagem" class="cabecalho">
+<nav>
       <div class="main">
 	  <br>
 	       <ul>
@@ -39,7 +40,7 @@ wrap.on("scroll", function(e) {
 				<li class="lista1"><a href="#">Serviços</a></li>
 				<li class="lista2"><a href="#">Parceiros</a></li>
 				<li class="lista3"><a href="#">Sobre nós</a></li>
-				<li class="lista4"><a href="#">Contacte - nos</a></li>
+				<li class="lista4"><a href="nova_conta.blade.php">Criar conta</a></li>
 		   </ul>
 		   <div class="logo">
 	                    <a class="btn">S.G.F.C</a>
@@ -54,7 +55,7 @@ wrap.on("scroll", function(e) {
 	  <a href="#" class="btn">CRIE UMA VIAGEM</a>
 	  <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a>
 	  </div>
-
+</nav>
 </header>
 
 
