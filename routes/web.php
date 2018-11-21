@@ -42,9 +42,3 @@ Route::get('/login', function () {
 route::post('/welcome_login', function(){
 	return view('welcome');
 })->name('welcomeLogin');
-
-route::get("pesquisa", function(){
-	return view()
-}
-
-);
