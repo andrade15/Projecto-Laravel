@@ -23,6 +23,10 @@ Route::get('/nova_viagem', function () {
     return view('nova_viagem');
 })->name('nova_viagem');
 
+Route::post('/nova_viagem', function () {
+    return view('nova_viagem');
+})->name('nova_viagem');
+
 Route::get('/index', function () {
     return view('index');
 })->name('index');
@@ -38,4 +42,5 @@ Route::get('/login', function () {
 route::post('/welcome_login', function(){
 	return view('welcome');
 })->name('welcomeLogin');
+
 
