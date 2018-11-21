@@ -2,9 +2,30 @@
 <html>
 <head>
 <title>Frota de Camioes</title>
-<link rel="stylesheet" href="../sass/home.css">
+<link rel="stylesheet" href='{{asset("css/home.css")}}'>
 </head>
-<style>
+<style> 
+input[type=text]{
+    width:18%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	margin-top:30px;
+	margin-left:70%;
+}
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-left:70%;
+	margin-top:5px;
+}
+
+
 .footer {
    left: 0;
    bottom: 0;
@@ -14,7 +35,20 @@
    color: white;
    text-align: center;
 }
+
+.hidden {
+    display:none;
+}
+
+
 </style>
+
+<script>
+function myFunction() {
+    document.getElementById("hidden").style.display = "block";
+}
+</script>
+
 <body>
 <header>
       <div class="main">
@@ -22,21 +56,25 @@
 	       <ul>
 		        <li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Viagens</a></li>
-				<li><a href="#">Solicitações</a></li>
+				<li onclick="myFunction();"><a>Solicitações</a></li>
 				<li><a href="#">Sobre nós</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="{{ route('index')}}">Sair</a></li>
 		   </ul>
 		   <div class="logo">
 	                    <a class="btn">S.G.F.C</a>
 	       </div>
-	  
+		   
+	  <form class="hidden" id="hidden" method="post" action="pesquisa.php"><br>
+<input type="text" id="hidden" name="id" placeholder="BI"><br>
+<input type="submit" value="GO">
+</form>
 	  </div>
 	  <div class="title">
 	  <h1> FROTA DE CAMIOES</h1>
 	  </div>
 	  
 	  <div class="button">
-	  <a href="nova_viagem.blade.php" class="btn">CRIE UMA VIAGEM</a>
+	  <a href="{{ route('nova_viagem')}}" class="btn">CRIE UMA VIAGEM</a>
 	<!--
  <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a> -->
 	  </div>

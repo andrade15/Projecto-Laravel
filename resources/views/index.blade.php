@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Frota de Camioes</title>
-<link rel="stylesheet" href="../sass/home.css">
-<script src="../js/jquery.js"></script>
+<link rel="stylesheet" href='{{asset("css/home.css")}}'>
+<script src="{{asset('js/jquery.js')}}"></script>
 <script>
 
 var wrap = $("#imagem");
@@ -53,7 +53,7 @@ wrap.on("scroll", function(e) {
 	  
 	  <div class="button">
 	  <a href="#" class="btn">CRIE UMA VIAGEM</a>
-	  <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a>
+	  <a href='{{ route("login")}}' class="btn">INICIAR SECÇÃO</a>
 	  </div>
 </nav>
 </header>

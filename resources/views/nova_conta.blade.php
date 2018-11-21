@@ -15,7 +15,7 @@
 				<li class="active"><a href="#">Viagens</a></li>
 				<li><a href="#">Solicitações</a></li>
 				<li><a href="#">Sobre nós</a></li>
-				<li><a href="#">Iniciar Sessão</a></li>
+				<li><a href="{{ route('login')}}">Iniciar Sessão</a></li>
 		   </ul>
 		   <div class="logo">
 	                    <a class="btna">S.G.F.C</a>

@@ -69,5 +69,5 @@ mysqli_close($connect);
 	}
 ?>
 <body>
-<a href="../views/welcome.blade.php">Voltar</a>
+<a href='{{ route("welcome")}}'>Voltar</a>
 </html>
