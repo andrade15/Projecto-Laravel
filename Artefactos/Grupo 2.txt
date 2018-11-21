@@ -1,0 +1,13 @@
+https://github.com/andrade15/Projecto-Laravel
+
+Elementos do Grupo 2
+-Manjate, Andrade machequele
+-Gulele, Dércio Gulele
+-Rodrigues, Núria Jamal
+-Guirute, Abel Jorge
+-Jeque, Osvaldo Albano
+-Fazir, Wiliam
+-Mazembe, Dércio
+
+
+Grupo 2: Sistema de Gestão de Frota de Camiões

@@ -7,7 +7,6 @@
 </style>
 </head>
 <body>  
-<div class="fundo">
 <div class="main" style="background-image:'background-image:index.html;'">
 	  <br>
 	       <ul>
@@ -15,7 +14,7 @@
 				<li class="active"><a href="#">Viagens</a></li>
 				<li><a href="#">Solicitações</a></li>
 				<li><a href="#">Sobre nós</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#">Sair</a></li>
 		   </ul>
 		   <div class="logo">
 	                    <a class="btna">S.G.F.C</a>
@@ -52,9 +51,10 @@
           <option>Zambézia</option>
           <option>Sofala</option>
         </select>
-	
-  <br>Data de partida
-  <br> <input type="date" id="data1" name="dPartida" required>
+
+<br>		
+  <text class="data">Data de partida</text></br>
+  <input type="date" id="data1" name="dPartida" required>
 
   <select class="selector" name="city" required>
 <option>Seleccione a Cidade de Chegada</option>
@@ -68,7 +68,7 @@
 <option>Lichinga</option>
 </select>
 
-  <br>Data de chegada
+  <br><text class="data">Data de partida</text>
   <br> <input type="date" id="data1" name="dChegada" required>
   <select class="selector" name="distrito" required>
 <option>Seleccione o distrito</option>
@@ -94,13 +94,18 @@
 <option>Mobiliario</option>
 </select>
 
-  <input type ="submit" class="btn" name="submit" value="Submit">  
+  <input type ="submit" class="btn" name="submit" value="Solicitar">  
 </form>
-</div>
 
 
+<section class="fim">
+<br>
+<p class="logo2">SISTEMA DE GESTÃO DE FROTA DE CAMIÕES</p>
+<br>
+<br>
+<br>
 
 
-</div>
+</section>
 </body>
 </html>

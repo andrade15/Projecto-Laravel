@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/nova_conta', function () {
+    return view('nova_conta');
+});
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
+

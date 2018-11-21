@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>  
 <html>
 <head>
-<link rel="stylesheet" href="../sass/form.css">
+<link rel="stylesheet" href="/css/form.css">
 <style>
 .error {color: #FF0000;}
 </style>
@@ -11,11 +11,11 @@
 <div class="main">
 	  <br>
 	       <ul>
-		        <li><a href="welcome.blade.php">Home</a></li>
+		        <li><a href="/welcome">Home</a></li>
 				<li class="active"><a href="#">Viagens</a></li>
 				<li><a href="#">Solicitações</a></li>
 				<li><a href="#">Sobre nós</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="#">Iniciar Sessão</a></li>
 		   </ul>
 		   <div class="logo">
 	                    <a class="btna">S.G.F.C</a>
