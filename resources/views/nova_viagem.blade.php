@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>  
+﻿<!DOCTYPE HTML>  
 <html>
 <head>
-<link rel="stylesheet" href='{{asset("css/form.css")}}'>
+<link rel="stylesheet" href="../sass/form.css">
 <style>
 .error {color: #FF0000;}
 </style>
@@ -10,7 +10,7 @@
 <div class="main" style="background-image:'background-image:index.html;'">
 	  <br>
 	       <ul>
-		        <li><a href="/welcome">Home</a></li>
+		        <li><a href="welcome.blade.php">Home</a></li>
 				<li class="active"><a href="#">Viagens</a></li>
 				<li><a href="#">Solicitações</a></li>
 				<li><a href="#">Sobre nós</a></li>

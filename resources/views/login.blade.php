@@ -1,9 +1,9 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
 <title>SGFC - Login</title>
-<link rel="stylesheet" href='{{asset("css/style.css")}}'>
+<link rel="stylesheet" href="../sass/style.css">
 </head>
 <body>
 <?php
@@ -92,7 +92,7 @@ while($row=mysqli_fetch_row($result)){
 	/*echo "$row[0] | $row[1] | $row[2] | $row[3] | $row[4] | $row[5] | $row[6]<br>";*/
 	if($name==$row[5] && $pass==$row[6]){
 		
-		
+	header("Location:welcome.blade.php");
 	}
 	}
 	
@@ -101,7 +101,9 @@ while($row=mysqli_fetch_row($result)){
 	
 	while($row=mysqli_fetch_row($result)){
 	/*echo "$row[0] | $row[1] | $row[2] | $row[3] | $row[4] | $row[5] | $row[6]<br>";*/
-	if($name==$row[3] && $senha==$row[4]){
+	if($name==$row[3] && $pass==$row[4]){
+		
+		header("Location:gestor.blade.php");
 		
 	}
 	}

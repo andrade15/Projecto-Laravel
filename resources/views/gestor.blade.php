@@ -1,25 +1,31 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Frota de Camioes</title>
 <link rel="stylesheet" href="../sass/home.css">
-<script src="../js/jquery.js"></script>
-<script>
-
-var wrap = $("#imagem");
-
-wrap.on("scroll", function(e) {
-  if (this.scrollTop > 147) {
-    wrap.addClass("fix-header");
-  } else {
-    wrap.removeClass("fix-header");
-  }
-})
-
-
-</script>
 </head>
-<style>
+<style> 
+input[type=text]{
+    width:18%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	margin-top:30px;
+	margin-left:70%;
+}
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-left:67%;
+	margin-top:5px;
+}
+
+
 .footer {
    left: 0;
    bottom: 0;
@@ -29,33 +35,60 @@ wrap.on("scroll", function(e) {
    color: white;
    text-align: center;
 }
+
+.hidden {
+    display:none;
+}
+
+.hidden1 {
+    display:none;
+}
 </style>
-<body id="corpo">
-<header id="imagem" class="cabecalho">
-<nav>
+
+<script>
+function myFunction() {
+    document.getElementById("hidden").style.display = "block";
+}
+
+function myFunction1() {
+    document.getElementById("hidden1").style.display = "block";
+}
+</script>
+
+<body>
+<header>
       <div class="main">
 	  <br>
 	       <ul>
 		        <li class="active"><a href="#">Home</a></li>
-				<li class="lista1"><a href="#">Serviços</a></li>
-				<li class="lista2"><a href="#">Parceiros</a></li>
-				<li class="lista3"><a href="#">Sobre nós</a></li>
-				<li class="lista4"><a href="nova_conta.blade.php">Criar conta</a></li>
+				<li><a href="pesquisag.blade.php">Viagens</a></li>
+				<li><a>Solicitações</a></li>
+				<li><a href="#">Sobre nós</a></li>
+				<li><a href="index.blade.php">Sair</a></li>
 		   </ul>
 		   <div class="logo">
 	                    <a class="btn">S.G.F.C</a>
 	       </div>
-	  
+		   
+	  <form class="hidden" id="hidden" method="post" action="pesquisa.blade.php"><br>
+<input type="text" id="hidden" name="id" placeholder="BI"><br>
+<input type="submit" value="GO">
+</form>
+<form class="hidden1" id="hidden1" method="post" action="pesquisav.blade.php"><br>
+<input type="text" id="hidden" name="id" placeholder="BI"><br>
+<input type="submit" value="GO">
+</form>
 	  </div>
 	  <div class="title">
 	  <h1> FROTA DE CAMIOES</h1>
 	  </div>
 	  
 	  <div class="button">
-	  <a href="nova_viagem" class="btn">CRIE UMA VIAGEM</a>
-	  <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a>
+	  <a href="solicitacoes.blade.php" class="btn">CRIE UMA VIAGEM</a>
+	<!--
+ <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a> -->
 	  </div>
-</nav>
+
 </header>
 
 
@@ -81,7 +114,7 @@ wrap.on("scroll", function(e) {
 fgthoigfcxd<br>
 
 <div class="footer">
-  <p>Footer</p>
+  <p>FROTA Ltd</p>
 </div>
 <div>
 </body>

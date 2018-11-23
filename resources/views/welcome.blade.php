@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Frota de Camioes</title>
-<link rel="stylesheet" href='{{asset("css/home.css")}}'>
+<link rel="stylesheet" href="../sass/home.css">
 </head>
 <style> 
 input[type=text]{
@@ -21,7 +21,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-	margin-left:70%;
+	margin-left:67%;
 	margin-top:5px;
 }
 
@@ -40,12 +40,18 @@ input[type=submit] {
     display:none;
 }
 
-
+.hidden1 {
+    display:none;
+}
 </style>
 
 <script>
 function myFunction() {
     document.getElementById("hidden").style.display = "block";
+}
+
+function myFunction1() {
+    document.getElementById("hidden1").style.display = "block";
 }
 </script>
 
@@ -55,16 +61,20 @@ function myFunction() {
 	  <br>
 	       <ul>
 		        <li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Viagens</a></li>
+				<li onclick="myFunction1();"><a>Viagens</a></li>
 				<li onclick="myFunction();"><a>Solicitações</a></li>
 				<li><a href="#">Sobre nós</a></li>
-				<li><a href="{{ route('index')}}">Sair</a></li>
+				<li><a href="index.blade.php">Sair</a></li>
 		   </ul>
 		   <div class="logo">
 	                    <a class="btn">S.G.F.C</a>
 	       </div>
 		   
-	  <form class="hidden" id="hidden" method="post" action="pesquisa.php"><br>
+	  <form class="hidden" id="hidden" method="post" action="pesquisa.blade.php"><br>
+<input type="text" id="hidden" name="id" placeholder="BI"><br>
+<input type="submit" value="GO">
+</form>
+<form class="hidden1" id="hidden1" method="post" action="pesquisav.blade.php"><br>
 <input type="text" id="hidden" name="id" placeholder="BI"><br>
 <input type="submit" value="GO">
 </form>
@@ -74,7 +84,7 @@ function myFunction() {
 	  </div>
 	  
 	  <div class="button">
-	  <a href="{{ route('nova_viagem')}}" class="btn">CRIE UMA VIAGEM</a>
+	  <a href="nova_viagem.blade.php" class="btn">SOLICITAR VIAGEM</a>
 	<!--
  <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a> -->
 	  </div>

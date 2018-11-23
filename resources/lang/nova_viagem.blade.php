@@ -59,7 +59,12 @@ else{
 $query = "INSERT INTO `viagem` (`id`, `Data de Partida`, `Ponto de partida`, `Provincia de Chegada`, `Cidade de Chegada`, `Distrito de Chegada`,`Data de Chegada`, 
 `Peso da carga`, `Tipo de Carga`, `idcliente`,`idMotorista`, `idCamiao`, `valPagar`, `Estado`) VALUES('null','$dPartida','$cPartida','$provincia','$city','$distrito','$dChegada','$peso','$opcao','$idcliente',0, 0, '$total', 'Nao')";
 if (mysqli_query($connect, $query)) {
-    echo "<script>alert('Solicitacao Enviada');</script>";
+    
+    
+    echo "Solicitacao Enviada";
+    
+     header("Location:../views/welcome.blade.php");
+sleep(30);
 } else {
     echo "<script>alert('Falha no Envio. <br> Tente Novamente mais tarde!');</script>";
 }
@@ -69,5 +74,5 @@ mysqli_close($connect);
 	}
 ?>
 <body>
-<a href='{{ route("welcome")}}'>Voltar</a>
+
 </html>
