@@ -38,8 +38,8 @@ wrap.on("scroll", function(e) {
 	       <ul>
 		        <li class="active"><a href="#">Home</a></li>
 				<li class="lista1"><a href="#">Serviços</a></li>
-				<li class="lista2"><a href="#">Parceiros</a></li>
-				<li class="lista3"><a href="#">Sobre nós</a></li>
+				<li class="lista2"><a href="parceiros.blade.php">Parceiros</a></li>
+				<li class="lista3"><a href="sobre.blade.php">Sobre nós</a></li>
 				<li class="lista4"><a href="nova_conta.blade.php">Criar conta</a></li>
 		   </ul>
 		   <div class="logo">
@@ -52,7 +52,7 @@ wrap.on("scroll", function(e) {
 	  </div>
 	  
 	  <div class="button">
-	  <a href="nova_viagem" class="btn">CRIE UMA VIAGEM</a>
+	  <a href="login.blade.php" class="btn">CRIE UMA VIAGEM</a>
 	  <a href="login.blade.php" class="btn">INICIAR SECÇÃO</a>
 	  </div>
 </nav>

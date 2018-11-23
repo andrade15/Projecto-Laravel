@@ -1,8 +1,9 @@
-<!DOCTYPE HTML>  
+﻿<!DOCTYPE HTML>  
 <html>
 <head>
 <style>
 .error {color: #FF0000;}
+<link rel="stylesheet" href="../sass/form.css">
 </style>
 </head>
 <body>  
@@ -73,11 +74,13 @@ function test_input($data) {
 
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">*</span></p>
+
+<h1 CLASS="titulo"> NOVA CONTA</h1>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name">
+  <input type="text" placeholder="Nome Completo" name="name">
   <span class="error"> <?php echo $nameErr;?></span>
   <br><br>
-  Apelido: <input type="text" name="apelido">
+ <input type="text" placeholder="Apelido" name="apelido">
   <span class="error"> <?php echo $apelidoErr;?></span>
   <br><br>
   

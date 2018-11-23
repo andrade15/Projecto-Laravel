@@ -120,7 +120,7 @@ li a:hover:not(.active) {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: rgb(120, 120, 120);
+    background-color: mediumseagreen;
     color: white;
 }
 
@@ -211,7 +211,7 @@ background-color: green;
   <li><a>About</a></li>
   <li style="margin-top:120px;" id="link"><a>Efectuar pagamento</a></li>
   <li style="" id="link1"><a>Apagar Solicitação<a></li>
-   <p style="margin-top:230px;">SISTEMA DE GESTÃO DE FROTA DE CAMIÕES LTD</p>
+   <p style="margin-top:250px; margin-left:100px; text-decoration:bold; color:black;">SGFC</p>
 </ul>
 
 
