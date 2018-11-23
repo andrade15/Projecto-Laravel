@@ -68,7 +68,7 @@
 <option>Lichinga</option>
 </select>
 
-  <br><text class="data">Data de partida</text>
+  <br><text class="data">Data de chegada</text>
   <br> <input type="date" id="data1" name="dChegada" required>
   <select class="selector" name="distrito" required>
 <option>Seleccione o distrito</option>
@@ -94,7 +94,7 @@
 <option>Mobiliario</option>
 </select>
 
-  <input type ="submit" class="btn" name="submit" value="Solicitar">  
+  <input type ="submit" class="btna5" name="submit" value="Solicitar">  
 </form>
 
 

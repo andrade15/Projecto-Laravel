@@ -67,8 +67,8 @@ body{
 	margin-left:35%;
 }
 .btn:hover{
-	background-color:white;
-	color:white;
+	background-color:black;
+	color:black;
 }
 
 
@@ -157,4 +157,21 @@ ul li.active a{
 	float:center;
 	color:black;
 	text-decoration:bold;
+}
+
+
+.btna5{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color:#fff;
+	text-decoration:none;
+	transition: 0.8s ease;
+	border-radius:10px;
+        position:absolute;
+        top:800px;
+        left:500px;
+}
+.btna5:hover{
+	background-color: #fff;
+	color:#000;
 }
